@@ -48,7 +48,7 @@ def get_opinions(n):
             elif x.probs[h] >= 10:
                 p += '+'
             else:
-                p += str(x.probs[h])+','
+                p += str(x.probs[h])
             q += 'n' if len(x.received_blocks) <= h or x.received_blocks[h] is None else 'y'
         o.append((h, p, q))
     return o
